@@ -1,0 +1,80 @@
+/* line 3, ../sass/positioning.scss */
+* {
+  padding: 0;
+  margin: 0;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 8, ../sass/positioning.scss */
+body {
+  background-attachment: fixed;
+  position: relative;
+}
+
+/* line 12, ../sass/positioning.scss */
+nav {
+  height: 100%;
+  width: 20%;
+  position: fixed;
+  left: 20px;
+  top: 40px;
+}
+/* line 18, ../sass/positioning.scss */
+nav li {
+  text-align: center;
+  font-size: 60px;
+  list-style: none;
+  background-color: #46AFBC;
+}
+/* line 23, ../sass/positioning.scss */
+nav li a {
+  text-decoration: none;
+  height: 80px;
+  line-height: 80px;
+  display: block;
+  color: #fff;
+}
+
+/* line 37, ../sass/positioning.scss */
+.content {
+  margin-top: 100px;
+}
+
+/* line 40, ../sass/positioning.scss */
+.content div {
+  width: 70%;
+  float: right;
+  height: 899px;
+}
+
+/* line 46, ../sass/positioning.scss */
+#item1 {
+  background-color: red;
+}
+
+/* line 49, ../sass/positioning.scss */
+#item2 {
+  background-color: yellow;
+}
+
+/* line 52, ../sass/positioning.scss */
+#item3 {
+  background-color: blue;
+}
+
+/* line 55, ../sass/positioning.scss */
+#item4 {
+  background-color: green;
+}
+
+/* line 58, ../sass/positioning.scss */
+#item5 {
+  background-color: black;
+}
+
+/* line 61, ../sass/positioning.scss */
+.current {
+  background-color: #000;
+}

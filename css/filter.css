@@ -1,0 +1,11 @@
+.jumbotron {
+	background-color: #CB3837;
+	text-align: center;
+	color:#FFFFFF;
+	font-family: '宋体';
+}
+
+.jumbotron input{
+	max-width: 300px;
+	margin: 0 auto;
+}

@@ -1,0 +1,42 @@
+@import "compass";
+body{
+	background-color: #ccc;
+}
+.container{
+	@include perspective(800px);
+	@include perspective-origin(50% 50%);
+	width: 400px;
+	height: 400px;
+	overflow: hidden;
+	margin: 0 auto;
+}	
+.pagegroup{
+	width:400px;
+	height: 400px;
+	position: relative;
+	@include transform-style(preserve-3d);
+}
+.page{
+	width: 360px;
+	height: 360px;
+	padding:20px;
+	background-color: #000;
+	color: #fff;
+	text-align: center;	
+	font-size: 360px;
+	line-height: 360px;
+	font-weight: bold;
+	position: absolute;
+	@include transition(2s);
+	-moz-transform-origin:bottom;
+	-webkit-transform-origin:bottom bottom;
+
+}
+#page2,#page3,#page4,#page5,#page6{
+	@include rotateX(90deg);
+}
+p{
+	margin: 0 auto;
+	text-align: center;
+
+}

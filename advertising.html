@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>广告效果</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/ad.css">
+	<link rel="stylesheet" href="css/css/font-awesome.css">
+
+</head>
+<body>
+	<div class="ad1">
+	猜猜我有啥@！<i class="fa fa-times"></i>
+	<div><img src="img/11.jpg" alt=""></div>	
+	</div>
+	<div id="ad2">
+		<img src="img/ad.png" alt="" id="ad2-img">	
+	</div>
+	<div class="test">dfsfsdfdsfdsfdasdasdasdsadasdasddasdasdasasasdasdasdasdsadasd</div>
+<script src="js/jquery.js"></script>
+<script>
+
+$(document).ready(function(){
+		$('.fa-times').click(function(){
+			$('.ad1 img').hide();
+		$('.ad1').mouseenter(function(){
+			$('.ad1 img').show();
+		});
+		});
+
+/*var oAd     = document.getElementById('ad2');
+var oAdcon  = document.getElementById('ad2-img');
+var h = 0;
+var step = 5;
+var maxH = oAdcon.height;
+function adDown(){
+	oAd.style.height = h +'px';
+    oAd.style.display = 'block';
+	 if(h<maxH){
+		h+=step;
+		setTimeout(adDown,1);
+		}else{			
+			setTimeout(adUp,3000);
+			}
+}
+function adUp(){
+	if(h>0){
+		h-=step;
+		oAd.style.height = h +'px';
+		setTimeout(adUp,1);
+		}
+	}
+setTimeout(adDown,3000);*/
+	});
+</script>
+</body>
+</html>

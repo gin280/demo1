@@ -1,0 +1,15 @@
+/* line 3, ../sass/back-to-top.scss */
+body {
+  height: 3000px;
+  position: relative;
+}
+
+/* line 8, ../sass/back-to-top.scss */
+button {
+  position: fixed;
+  right: 20px;
+  bottom: 50px;
+  height: 100px;
+  width: 40px;
+  display: block;
+}

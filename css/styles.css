@@ -1,0 +1,16 @@
+/* line 4, ../sass/styles.scss */
+div {
+  margin: 0 auto;
+  width: 600px;
+  height: 500px;
+  background-color: red;
+  -moz-transition: 1.2s;
+  -o-transition: 1.2s;
+  -webkit-transition: 1.2s;
+  transition: 1.2s;
+}
+
+/* line 12, ../sass/styles.scss */
+.add {
+  height: 1px;
+}

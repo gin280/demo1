@@ -1,0 +1,57 @@
+/* line 3, ../sass/waterfall.scss */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* .container{
+	position: relative;
+	.box{
+		padding: 15px 0 0 15px;
+		float: left;
+		width: 200px;
+		.pic{
+			padding: 10px;
+			border: 1px solid #ccc;
+			@include border-radius(5px);
+			@include box-shadow(0 0 5px #ccc);
+			img{
+				width: 165px;
+				height: auto;
+			}
+		}
+	}
+} */
+/* line 25, ../sass/waterfall.scss */
+.container {
+  -moz-column-count: 5;
+  -webkit-column-count: 5;
+  column-count: 5;
+  -moz-column-gap: 4px;
+  -webkit-column-gap: 4px;
+  column-gap: 4px;
+}
+
+/* line 29, ../sass/waterfall.scss */
+.box {
+  padding: 4% 0 0 4%;
+}
+/* line 31, ../sass/waterfall.scss */
+.box .pic {
+  padding: 4%;
+  border: 1px solid #ccc;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  -moz-box-shadow: 0 0 6px #ccc;
+  -webkit-box-shadow: 0 0 6px #ccc;
+  box-shadow: 0 0 6px #ccc;
+}
+/* line 36, ../sass/waterfall.scss */
+.box .pic img {
+  display: inline-block;
+  width: 85%;
+  margin-left: 6%;
+  height: auto;
+}

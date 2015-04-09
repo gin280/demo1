@@ -1,0 +1,61 @@
+/* line 2, ../sass/3d.scss */
+body {
+  background-color: #ccc;
+}
+
+/* line 5, ../sass/3d.scss */
+.container {
+  -moz-perspective: 800px;
+  -webkit-perspective: 800px;
+  perspective: 800px;
+  -moz-perspective-origin: 50% 50%;
+  -webkit-perspective-origin: 50% 50%;
+  perspective-origin: 50% 50%;
+  width: 400px;
+  height: 400px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+/* line 13, ../sass/3d.scss */
+.pagegroup {
+  width: 400px;
+  height: 400px;
+  position: relative;
+  -moz-transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+/* line 19, ../sass/3d.scss */
+.page {
+  width: 360px;
+  height: 360px;
+  padding: 20px;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  font-size: 360px;
+  line-height: 360px;
+  font-weight: bold;
+  position: absolute;
+  -moz-transition: 2s;
+  -o-transition: 2s;
+  -webkit-transition: 2s;
+  transition: 2s;
+  -moz-transform-origin: bottom;
+  -webkit-transform-origin: bottom bottom;
+}
+
+/* line 35, ../sass/3d.scss */
+#page2, #page3, #page4, #page5, #page6 {
+  -moz-transform: rotateX(90deg);
+  -webkit-transform: rotateX(90deg);
+  transform: rotateX(90deg);
+}
+
+/* line 38, ../sass/3d.scss */
+p {
+  margin: 0 auto;
+  text-align: center;
+}

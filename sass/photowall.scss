@@ -1,0 +1,56 @@
+@import "compass";
+.container{
+	margin: 0 auto;
+	background-color: #D65C5C;
+	height: 350px;
+	text-align: center;
+	width: 100%;
+	padding: 10px;
+	position: relative;
+	h1{
+		color: #fff;
+		font-weight: bold;
+	};
+	img{
+		padding: 5px 5px 10px;
+		background-color: #fff;
+		@include transition(1s);
+		
+		z-index: 1;
+		&:hover{
+			z-index: 100;
+			@include rotate(0deg);
+			@include scale(1.5);
+			@include box-shadow(5px 5px 10px #000)
+		}
+	}
+}
+.img1{
+	position: absolute;
+	top: 90px;
+	left: 100px;
+	@include rotate(22deg);
+}
+.img2{
+	position: absolute;
+	top: 90px;
+	left:390px;
+	@include rotate(-66deg);
+}
+.img3{
+	position: absolute;
+	top: 90px;
+	left: 660px;
+}
+.img4{
+	position: absolute;
+	top: 90px;
+	left: 1008px;
+	@include rotate(79deg);
+}
+.img5{
+	position: absolute;
+	top: 90px;
+	left:570px;
+	@include rotate(35deg);
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>back-to-top</title>
+	<link rel="stylesheet" href="css/back-to-top.css">
+</head>
+<body>
+	<button>back to top</button>
+</body>
+<script src="js/jquery.js"></script>
+<!-- <script src="js/lib/back-to-top.js"></script> -->
+<script>
+	$(document).ready(function(){
+		$('button').hide();
+		$(window).scroll(function(){
+			if($(window).scrollTop() > 100){
+				$('button').fadeIn(500);
+			}else {
+				$('button').fadeOut(300);
+			}
+		});
+		$('button').click(function() {
+			$('body').animate({
+				scrollTop:0
+			},1000);
+		})
+	});
+</script>
+</html>

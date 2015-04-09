@@ -1,0 +1,91 @@
+/* line 2, ../sass/photowall.scss */
+.container {
+  margin: 0 auto;
+  background-color: #D65C5C;
+  height: 350px;
+  text-align: center;
+  width: 100%;
+  padding: 10px;
+  position: relative;
+}
+/* line 10, ../sass/photowall.scss */
+.container h1 {
+  color: #fff;
+  font-weight: bold;
+}
+/* line 14, ../sass/photowall.scss */
+.container img {
+  padding: 5px 5px 10px;
+  background-color: #fff;
+  -moz-transition: 1s;
+  -o-transition: 1s;
+  -webkit-transition: 1s;
+  transition: 1s;
+  z-index: 1;
+}
+/* line 20, ../sass/photowall.scss */
+.container img:hover {
+  z-index: 100;
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -moz-transform: scale(1.5, 1.5);
+  -ms-transform: scale(1.5, 1.5);
+  -webkit-transform: scale(1.5, 1.5);
+  transform: scale(1.5, 1.5);
+  -moz-box-shadow: 5px 5px 10px #000;
+  -webkit-box-shadow: 5px 5px 10px #000;
+  box-shadow: 5px 5px 10px #000;
+}
+
+/* line 28, ../sass/photowall.scss */
+.img1 {
+  position: absolute;
+  top: 90px;
+  left: 100px;
+  -moz-transform: rotate(22deg);
+  -ms-transform: rotate(22deg);
+  -webkit-transform: rotate(22deg);
+  transform: rotate(22deg);
+}
+
+/* line 34, ../sass/photowall.scss */
+.img2 {
+  position: absolute;
+  top: 90px;
+  left: 390px;
+  -moz-transform: rotate(-66deg);
+  -ms-transform: rotate(-66deg);
+  -webkit-transform: rotate(-66deg);
+  transform: rotate(-66deg);
+}
+
+/* line 40, ../sass/photowall.scss */
+.img3 {
+  position: absolute;
+  top: 90px;
+  left: 660px;
+}
+
+/* line 45, ../sass/photowall.scss */
+.img4 {
+  position: absolute;
+  top: 90px;
+  left: 1008px;
+  -moz-transform: rotate(79deg);
+  -ms-transform: rotate(79deg);
+  -webkit-transform: rotate(79deg);
+  transform: rotate(79deg);
+}
+
+/* line 51, ../sass/photowall.scss */
+.img5 {
+  position: absolute;
+  top: 90px;
+  left: 570px;
+  -moz-transform: rotate(35deg);
+  -ms-transform: rotate(35deg);
+  -webkit-transform: rotate(35deg);
+  transform: rotate(35deg);
+}

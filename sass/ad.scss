@@ -1,0 +1,69 @@
+@import "compass";
+
+body{
+	background-color: #ccc;
+}
+.ad1{
+	background-color:green;
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	img{
+	}
+	i{
+		float: right;
+		margin-right: 4px;
+		&:hover{
+			color:red;
+			cursor: pointer;
+		}
+	}
+}
+@include keyframes(slideDown) {
+	0% {
+		height: 0;
+
+	}
+	100% {
+		height: 400px;
+
+	}
+}
+@include keyframes(slideUp) {
+	0% {
+		height: 400px;
+	
+	}
+	100% {
+		height: 0;
+	
+	}
+}
+#ad2{
+	width: 962px;
+	overflow: hidden;
+	height: 0;
+	margin: 0 auto;
+	position: relative;
+	@include animation-name(slideDown,slideUp);
+	@include animation-duration(4s,4s);
+	@include animation-iteration-count(1);
+	@include animation-timing-function(linear);
+	@include animation-delay(2s,10s);
+	@include animation-fill-mode(forwards);
+	@include animation-direction(alternate);
+	img{
+		width: 962px;
+		height: 385px;
+	}
+}
+
+.test{
+	width: percentage(0.2);
+	height: 50px;
+	background-color: yellow;
+	&:after{
+		content:"'1234'";
+	}
+
+}

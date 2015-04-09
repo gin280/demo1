@@ -1,0 +1,79 @@
+@import "compass";
+
+*{
+	@include box-sizing(border-box);
+	margin: 0;
+	padding: 0;
+}
+.marquee1{
+	height:40px;
+	width: 100px;
+	background-color: #000;
+	color: #fff;
+	margin: 0 auto;
+}
+
+#marquee2{
+	position: relative;
+	margin: 0 auto;
+	margin-top: 50px;
+	width: 100px;
+	height: 150px;
+	border: 5px solid #000;
+	overflow: hidden;
+	ul{
+		list-style: none;
+		width: 100px;
+		li{
+			width:90px;
+			height: 30px;
+			margin-bottom: 3px;
+			background-color: #000;
+			color: #fff;
+			
+		}
+	}
+}
+
+#marquee3{
+	position: relative;
+	margin: 100px;
+	width: 400px;
+	height: 100px;
+	background-color: #ccc;
+	overflow: hidden;
+	ul{
+		height: 120px;
+		list-style: none;
+		position: absolute;
+		@include animation(fade 6.0s );
+		@include animation-delay(2s);
+		@include animation-fill-mode(forwards);
+		@include animation-iteration-count(infinite);
+
+		li{
+			height: 20px;
+			background-color: pink;
+		}
+	}
+}
+@include keyframes(fade) {
+  0% {
+    margin-top: 0;
+  }
+  20% {
+    margin-top: -20px;
+  }
+  40% {
+    margin-top: -40px;
+  }
+  60% {
+    margin-top: -60px;
+  }
+  80% {
+    margin-top: -80px;
+  }
+  100% {
+    margin-top: -100px;
+  }
+}

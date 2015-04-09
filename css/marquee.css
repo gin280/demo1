@@ -1,0 +1,135 @@
+/* line 3, ../sass/marquee.scss */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 8, ../sass/marquee.scss */
+.marquee1 {
+  height: 40px;
+  width: 100px;
+  background-color: #000;
+  color: #fff;
+  margin: 0 auto;
+}
+
+/* line 16, ../sass/marquee.scss */
+#marquee2 {
+  position: relative;
+  margin: 0 auto;
+  margin-top: 50px;
+  width: 100px;
+  height: 150px;
+  border: 5px solid #000;
+  overflow: hidden;
+}
+/* line 24, ../sass/marquee.scss */
+#marquee2 ul {
+  list-style: none;
+  width: 100px;
+}
+/* line 27, ../sass/marquee.scss */
+#marquee2 ul li {
+  width: 90px;
+  height: 30px;
+  margin-bottom: 3px;
+  background-color: #000;
+  color: #fff;
+}
+
+/* line 38, ../sass/marquee.scss */
+#marquee3 {
+  position: relative;
+  margin: 100px;
+  width: 400px;
+  height: 100px;
+  background-color: #ccc;
+  overflow: hidden;
+}
+/* line 45, ../sass/marquee.scss */
+#marquee3 ul {
+  height: 120px;
+  list-style: none;
+  position: absolute;
+  -moz-animation: fade 6s;
+  -webkit-animation: fade 6s;
+  animation: fade 6s;
+  -moz-animation-delay: 2s;
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+  -moz-animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -moz-animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+/* line 54, ../sass/marquee.scss */
+#marquee3 ul li {
+  height: 20px;
+  background-color: pink;
+}
+
+@-moz-keyframes fade {
+  0% {
+    margin-top: 0;
+  }
+  20% {
+    margin-top: -20px;
+  }
+  40% {
+    margin-top: -40px;
+  }
+  60% {
+    margin-top: -60px;
+  }
+  80% {
+    margin-top: -80px;
+  }
+  100% {
+    margin-top: -100px;
+  }
+}
+@-webkit-keyframes fade {
+  0% {
+    margin-top: 0;
+  }
+  20% {
+    margin-top: -20px;
+  }
+  40% {
+    margin-top: -40px;
+  }
+  60% {
+    margin-top: -60px;
+  }
+  80% {
+    margin-top: -80px;
+  }
+  100% {
+    margin-top: -100px;
+  }
+}
+@keyframes fade {
+  0% {
+    margin-top: 0;
+  }
+  20% {
+    margin-top: -20px;
+  }
+  40% {
+    margin-top: -40px;
+  }
+  60% {
+    margin-top: -60px;
+  }
+  80% {
+    margin-top: -80px;
+  }
+  100% {
+    margin-top: -100px;
+  }
+}

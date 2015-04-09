@@ -1,0 +1,14 @@
+@import "bourbon";
+@import "compass";
+
+div{
+    margin: 0 auto;
+    width: 600px;
+    height: 500px;
+    background-color: red;
+     @include transition(1.2s);
+    
+}
+.add{
+    height: 1px;
+}

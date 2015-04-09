@@ -1,0 +1,43 @@
+@import "compass";
+
+*{
+	@include box-sizing(border-box);
+}
+/* .container{
+	position: relative;
+	.box{
+		padding: 15px 0 0 15px;
+		float: left;
+		width: 200px;
+		.pic{
+			padding: 10px;
+			border: 1px solid #ccc;
+			@include border-radius(5px);
+			@include box-shadow(0 0 5px #ccc);
+			img{
+				width: 165px;
+				height: auto;
+			}
+		}
+	}
+} */
+//css3 waterfall
+.container{
+	@include column-count(5);
+	@include column-gap(4px)
+}
+.box{
+	padding: 4% 0 0 4%;
+	.pic{
+		padding: 4%;
+		border: 1px solid #ccc;
+		@include border-radius(5px);
+		@include box-shadow(0 0 6px #ccc);
+		img{
+			display: inline-block;
+			width: 85%;
+			margin-left: 6%;
+			height: auto;
+		}
+	}
+}

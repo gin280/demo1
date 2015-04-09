@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" ng-app>
+<head>
+	<meta charset="UTF-8">
+	<title>filter</title>
+	<link rel="stylesheet" href="js/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/filter.css">
+</head>
+<body>
+	<div class="jumbotron">
+		<div class="container">
+			<h1>
+			冷门佳作
+			</h1>	
+			<p><input type="text" name="" id="input" class="form-control" placeholder="影片名" autofocus ng-model="query"></p>
+		</div>
+	</div>
+	<div class="container">
+	
+		<ul class="list-group">
+			<li class="list-group-item" ng-repeat="i in [{down:4,name:'野花'},{down:2,name:'安全至下'},{down:7,name:'甜蜜的永远'},{down:4,name:'蝴蝶的舌头'},{down:2,name:'七次机会'},{down:7,name:'一诺千金'}] |filter:query">
+				<span class="badge">下载数：{{i.down}}</span>
+				<p>{{i.name}}</p>
+			</li>
+		
+		</ul>
+	</div>
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="js/angular.js"></script>
+</body>
+</html>
